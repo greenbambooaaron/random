@@ -1,6 +1,6 @@
 #!/bin/bash
 echo -e "Getting Tor node list from github mirrored from dan.me.uk"
-wget -q -O - https://www.dan.me.uk/torlist/ > /tmp/full.tor
+wget -q -O - https://raw.githubusercontent.com/greenbambooaaron/random/master/torlist20200823 > /tmp/full.tor
 CMD=$(cat /tmp/full.tor | uniq | sort)
 for IP in $CMD; do
     let COUNT=COUNT+1
