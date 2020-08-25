@@ -1,0 +1,3 @@
+cd /tmp && sudo git clone https://github.com/shadowsocks/shadowsocks-libev.git && cd shadowsocks-libev && sudo git submodule update --init --recursive && sudo ./autogen.sh && sudo ./configure && sudo make && sudo make install && cd .. && sudo rm shadowsocks-libev -r -f
+cd /tmp && sudo git clone https://github.com/shadowsocks/simple-obfs.git && cd simple-obfs && sudo git submodule update --init --recursive && sudo ./autogen.sh && sudo ./configure && sudo make && sudo make install && cd .. && sudo rm simple-obfs -r -f
+sudo mkdir /etc/shadowsocks-libev && cd /etc/shadowsocks-libev && sudo touch config.json
